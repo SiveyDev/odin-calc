@@ -1,3 +1,17 @@
 * {
     background-color: #ced0dc;
 }
+
+body {
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.calc-body {
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
