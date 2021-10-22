@@ -1,23 +1,23 @@
 console.log("My favorite pie is 3.14");
 
-add(7.1,60);
-subtract(10,3);
-subtract(-3,10);
-multiply(-3,-4);
-divide(-20,-5);
+operate(divide, 10, 5);
 
-function add(x, y) {
-    console.log(x + y);
+function add(num1, num2) {
+    console.log(num1 + num2);
 }
 
-function subtract(x, y) {
-    console.log(x - y);
+function subtract(num1, num2) {
+    console.log(num1 - num2);
 }
 
-function multiply(x, y) {
-    console.log(x * y);
+function multiply(num1, num2) {
+    console.log(num1 * num2);
 }
 
-function divide(x, y) {
-    console.log(x / y);
+function divide(num1, num2) {
+    console.log(num1 / num2);
+}
+
+function operate(funcName, num1, num2) {
+    funcName(num1, num2);
 }
