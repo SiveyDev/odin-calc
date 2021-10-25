@@ -52,3 +52,22 @@ body {
     font-size: 22px;
     background-color: #04bd8e;
 }
+
+.clear-btn {
+    width: 400px;
+    height: 100px;
+    background-color: #13d4a3;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clear-btn:hover {
+    transform: scale(1.01);
+    font-size: 22px;
+    background-color: #04bd8e;
+}
+
+.zero {
+    width: 200px;
+}
