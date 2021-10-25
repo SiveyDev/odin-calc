@@ -15,3 +15,40 @@ body {
     border: 2px solid black;
     border-radius: 15px;
 }
+
+.calc-btns {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.num-btn {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2d86e2;
+    border: none;
+}
+
+.op-btn {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #13d4a3;
+    border: none;
+}
+
+.num-btn:hover {
+    transform: scale(1.01);
+    font-size: 22px;
+    background-color: #045fbb;
+}
+
+.op-btn:hover {
+    transform: scale(1.01);
+    font-size: 22px;
+    background-color: #04bd8e;
+}
