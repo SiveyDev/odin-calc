@@ -46,9 +46,6 @@ function divide(num1, num2) {
         display.textContent = result.toFixed(4);
         displayValue.push(result);
     }
-    // let result = num1 / num2;
-    // display.textContent = result.toFixed(4);
-    // displayValue.push(result);
 }
 
 function operate() {
