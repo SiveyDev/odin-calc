@@ -39,9 +39,16 @@ function multiply(num1, num2) {
 }
 
 function divide(num1, num2) {
-    let result = num1 / num2;
-    display.textContent = result.toFixed(4);
-    displayValue.push(result);
+    if (num2 == 0) {
+        display.textContent = 'Don\'t even try!';
+    } else {
+        let result = num1 / num2;
+        display.textContent = result.toFixed(4);
+        displayValue.push(result);
+    }
+    // let result = num1 / num2;
+    // display.textContent = result.toFixed(4);
+    // displayValue.push(result);
 }
 
 function operate() {
