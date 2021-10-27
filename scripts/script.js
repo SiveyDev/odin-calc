@@ -1,7 +1,11 @@
 const display = document.querySelector('.calc-display');
-const numbtns = document.querySelectorAll('.num');
+const numbtns = document.querySelectorAll('.num-btn');
 let displayValue = [];
-numbtns.forEach(numbtn => addEventListener('click', getNum));
+// numbtns.forEach(numbtn => addEventListener('click', getNum));
+for (let i = 0; i < numbtns.length; i++) {
+    numbtns[i].onclick = getNum;
+}
+
 
 function add(num1, num2) {
     console.log(num1 + num2);
