@@ -32,7 +32,7 @@ body {
     border: none;
 }
 
-.op-btn {
+.op-btn, .equal {
     width: 100px;
     height: 100px;
     font-size: 20px;
@@ -47,7 +47,7 @@ body {
     background-color: #045fbb;
 }
 
-.op-btn:hover {
+.op-btn:hover, .equal:hover {
     transform: scale(1.01);
     font-size: 22px;
     background-color: #04bd8e;
