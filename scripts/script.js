@@ -2,11 +2,12 @@ const display = document.querySelector('.calc-display');
 const numbtns = document.querySelectorAll('.num-btn');
 const opbtns = document.querySelectorAll('.op-btn');
 const equal = document.querySelector('.equal');
+const clearbtn = document.querySelector('.clear-btn');
 let displayValue = [];
 let opValue = "";
 let num1 = 0;
 let num2 = 0;
-// numbtns.forEach(numbtn => addEventListener('click', getNum));
+
 for (let i = 0; i < numbtns.length; i++) {
     numbtns[i].onclick = getNum;
 }
@@ -16,30 +17,31 @@ for (let i = 0; i < opbtns.length; i++) {
 }
 
 equal.onclick = operate;
+clearbtn.onclick = clear;
 
 
 function add(num1, num2) {
-    // console.log(num1 + num2);
     let result = num1 + num2;
     display.textContent = result;
+    displayValue.push(result);
 }
 
 function subtract(num1, num2) {
-    // console.log(num1 - num2);
     let result = num1 - num2;
     display.textContent = result;
+    displayValue.push(result);
 }
 
 function multiply(num1, num2) {
-    // console.log(num1 * num2);
     let result = num1 * num2;
     display.textContent = result;
+    displayValue.push(result);
 }
 
 function divide(num1, num2) {
-    // console.log(num1 / num2);
     let result = num1 / num2;
     display.textContent = result.toFixed(4);
+    displayValue.push(result);
 }
 
 function operate() {
@@ -61,7 +63,6 @@ function operate() {
         default:
             console.log("Error");
     }
-    // funcName(num1, num2);
 }
 
 function getNum(e) {
@@ -74,4 +75,12 @@ function getOp(e) {
     display.textContent += e.target.textContent;
     num1 = Number(displayValue.join(""));
     displayValue = [];
+}
+
+function clear(e) {
+    displayValue = [];
+    opValue = "";
+    num1 = 0;
+    num2 = 0;
+    display.textContent = '';
 }
